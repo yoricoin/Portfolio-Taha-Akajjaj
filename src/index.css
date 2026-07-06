@@ -152,6 +152,7 @@ ul {
   letter-spacing: -0.5px;
   display: flex;
   align-items: center;
+  gap: 8px;
 }
 
 .logo-code {
@@ -337,6 +338,7 @@ ul {
   margin-bottom: 24px;
   display: flex;
   align-items: center;
+  gap: 8px;
 }
 
 .typing-text {
