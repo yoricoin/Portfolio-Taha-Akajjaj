@@ -4,8 +4,8 @@ const Hero = () => {
   const words = [
     "Étudiant en Ingénierie IA & Data Science",
     "Spécialiste RAG & LLMs",
-    "Développeur Full Stack",
-    "Passionné de Deep Learning"
+    "Ingénieur Data & AI",
+    "Passionné par le Deep Learning"
   ];
   
   const [currentWordIndex, setCurrentWordIndex] = useState(0);
