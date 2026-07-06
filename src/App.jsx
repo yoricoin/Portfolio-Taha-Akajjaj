@@ -89,7 +89,7 @@ function App() {
       <header class="header">
         <div class="nav-container">
           <a href="#home" class="logo" onClick={(e) => { e.preventDefault(); handleNavClick('home'); }}>
-            <span class="logo-code">&lt;</span>Taha<span class="logo-code">.AI /&gt;</span>
+            taha<span class="logo-code">.dev</span>
           </a>
           <nav class={`nav-menu ${mobileMenuOpen ? 'active' : ''}`}>
             <span 
