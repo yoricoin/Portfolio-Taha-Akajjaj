@@ -51,7 +51,7 @@ const Contact = () => {
                 Collaborons Ensemble
               </h3>
               <p style={{ color: 'var(--text-secondary)', fontSize: '15px', maxWidth: '400px', margin: '0 auto', lineHeight: '1.6' }}>
-                Je suis activement à la recherche d'un stage de fin d'études (PFA) ou d'opportunités de collaboration dans le domaine de la <strong>Data Science</strong>, du <strong>RAG</strong> et de l'<strong>Intelligence Artificielle</strong>.
+                Je suis activement à la recherche d'un stage de fin d'études (PFE) ou d'opportunités de collaboration dans le domaine de la <strong>Data Science</strong>, du <strong>RAG</strong> et de l'<strong>Intelligence Artificielle</strong>.
               </p>
             </div>
 

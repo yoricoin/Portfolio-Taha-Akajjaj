@@ -56,7 +56,7 @@ const Hero = () => {
             <span class="cursor">|</span>
           </h2>
           <p class="hero-desc">
-            Actuellement en 4ᵉ année d'ingénierie à l'EMSI, je me spécialise dans la valorisation des données et le développement d'IA modernes (systèmes RAG, modèles de vision YOLO, traitement automatique du langage).
+            Actuellement en 5ᵉ année d'ingénierie à l'EMSI, je me spécialise dans la valorisation des données et le développement d'IA modernes (systèmes RAG, modèles de vision YOLO, traitement automatique du langage).
           </p>
           <div class="hero-buttons">
             <a href="#contact" class="btn btn-primary">

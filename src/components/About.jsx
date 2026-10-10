@@ -33,7 +33,7 @@ const About = () => {
               </div>
               <div class="detail-item">
                 <span class="detail-label">Statut :</span>
-                <span class="detail-val">Recherche de stage PFA (Fin d'études)</span>
+                <span class="detail-val">Recherche de stage PFE (Fin d'études)</span>
               </div>
             </div>
           </div>
