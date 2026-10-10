@@ -2,9 +2,10 @@ import React, { useState, useEffect } from 'react';
 
 const Hero = () => {
   const words = [
-    "Étudiant en Ingénierie IA & Data Science",
+    "Étudiant en 5ᵉ année Ingénierie IA & Data",
+    "À la recherche d'un Stage PFE",
     "Spécialiste RAG & LLMs",
-    "Ingénieur Data & AI",
+    "Développeur Data & AI Solutions",
     "Passionné par le Deep Learning"
   ];
   
@@ -47,7 +48,10 @@ const Hero = () => {
     <section id="home" class="hero-section">
       <div class="container hero-container">
         <div class="hero-content">
-          <span class="hero-welcome">Bienvenue sur mon portfolio</span>
+          <span class="hero-welcome">
+            <span style={{ display: 'inline-block', width: '8px', height: '8px', borderRadius: '50%', backgroundColor: '#10b981', marginRight: '8px', boxShadow: '0 0 10px #10b981' }}></span>
+            À la recherche d'un stage PFE
+          </span>
           <h1 class="hero-title">
             Bonjour, je suis <span class="highlight-text">Taha Akajjaj</span>
           </h1>
@@ -56,7 +60,7 @@ const Hero = () => {
             <span class="cursor">|</span>
           </h2>
           <p class="hero-desc">
-            Actuellement en 5ᵉ année d'ingénierie à l'EMSI, je me spécialise dans la valorisation des données et le développement d'IA modernes (systèmes RAG, modèles de vision YOLO, traitement automatique du langage).
+            Actuellement en <strong>5ᵉ année d'ingénierie à l'EMSI</strong> et activement <strong>à la recherche d'un stage de fin d'études (PFE)</strong>. Je me spécialise dans la valorisation des données et le développement d'IA modernes (systèmes RAG, modèles de vision YOLO, traitement automatique du langage).
           </p>
           <div class="hero-buttons">
             <a href="#contact" class="btn btn-primary">

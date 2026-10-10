@@ -33,7 +33,10 @@ const About = () => {
               </div>
               <div class="detail-item">
                 <span class="detail-label">Statut :</span>
-                <span class="detail-val">Recherche de stage PFE (Fin d'études)</span>
+                <span class="detail-val" style={{ color: '#10b981', fontWeight: '600', display: 'inline-flex', alignItems: 'center', gap: '6px' }}>
+                  <i class="fa-solid fa-circle" style={{ fontSize: '8px', color: '#10b981' }}></i>
+                  À la recherche d'un stage PFE
+                </span>
               </div>
             </div>
           </div>
