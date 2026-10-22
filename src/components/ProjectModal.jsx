@@ -22,12 +22,28 @@ const ProjectModal = ({ project, onClose }) => {
             <span class="modal-meta-item">
               <i class="fa-solid fa-folder-open"></i> {project.categoryName}
             </span>
+            {project.type && (
+              <span class="modal-meta-item">
+                <i class="fa-solid fa-layer-group"></i> <strong>Type :</strong> {project.type}
+              </span>
+            )}
+            {project.role && (
+              <span class="modal-meta-item">
+                <i class="fa-solid fa-user-gear"></i> <strong>Rôle :</strong> {project.role}
+              </span>
+            )}
             {project.duration && (
               <span class="modal-meta-item">
                 <i class="fa-solid fa-clock"></i> {project.duration}
               </span>
             )}
           </div>
+          {project.status && (
+            <div class="modal-status-badge">
+              <span class="status-indicator-dot"></span>
+              <span><strong>Statut :</strong> {project.status}</span>
+            </div>
+          )}
         </div>
 
         <div class="modal-project-desc-full">
@@ -37,7 +53,7 @@ const ProjectModal = ({ project, onClose }) => {
         {project.features && project.features.length > 0 && (
           <div class="modal-section">
             <h4 class="modal-subtitle">
-              <i class="fa-solid fa-star"></i> Fonctionnalités clés
+              <i class="fa-solid fa-star"></i> {project.featuresTitle || "Fonctionnalités clés"}
             </h4>
             <ul class="modal-section-list">
               {project.features.map((feature, index) => (

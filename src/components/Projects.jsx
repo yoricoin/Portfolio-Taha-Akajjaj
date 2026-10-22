@@ -13,6 +13,30 @@ const Projects = ({ onSelectProject }) => {
 
   const projectsData = [
     {
+      id: 11,
+      title: "CalenVelox",
+      type: "Application Web Full-Stack & Agent IA (Productivité étudiante)",
+      role: "Concepteur & Développeur Full-Stack",
+      status: "Version Web fonctionnelle en production / Version mobile Flutter en cours",
+      category: ["rag-llm", "fullstack"],
+      categoryName: "RAG & Agents IA • Full-Stack",
+      shortDesc: "Application intelligente d'organisation et de calendrier automatisé pour étudiants via un assistant conversationnel en langage naturel.",
+      fullDesc: "Application intelligente d'organisation et de calendrier automatisé pour étudiants. Elle permet d'ajouter, prioriser et planifier devoirs, révisions et événements via un assistant conversationnel en langage naturel.",
+      featuresTitle: "Points techniques clés",
+      features: [
+        "Orchestration d'agents IA avec LangGraph (gestion du contexte, détection d'ambiguïtés et validation Human-in-the-Loop).",
+        "API REST asynchrone sécurisée sous FastAPI avec persistance PostgreSQL et SQLAlchemy.",
+        "Interface utilisateur moderne, réactive et fluide développée avec React et Vite."
+      ],
+      challenges: [
+        "Conception d'une machine à états LangGraph robuste gérant la mémoire contextuelle, les cycles de décision et l'interaction Human-in-the-Loop",
+        "Modélisation relationnelle avec transactions asynchrones sous PostgreSQL et SQLAlchemy garantissant l'intégrité des plannings",
+        "Optimisation de la latence des interactions LLM (Claude / GPT-4o-mini) avec streaming et réactivité sous React"
+      ],
+      tags: ["React", "Vite", "Python", "FastAPI", "LangGraph", "LLM (Claude / GPT-4o-mini)", "PostgreSQL", "SQLAlchemy", "JWT"],
+      icon: "fa-solid fa-calendar-check"
+    },
+    {
       id: 1,
       title: "AI Study Dashboard (PDF RAG & Tutor)",
       category: "rag-llm",
@@ -229,7 +253,11 @@ const Projects = ({ onSelectProject }) => {
 
   const filteredProjects = activeFilter === 'all' 
     ? projectsData 
-    : projectsData.filter(proj => proj.category === activeFilter);
+    : projectsData.filter(proj => 
+        Array.isArray(proj.category) 
+          ? proj.category.includes(activeFilter) 
+          : proj.category === activeFilter
+      );
 
   return (
     <section id="projects" class="projects-section section-padding reveal">
@@ -259,6 +287,11 @@ const Projects = ({ onSelectProject }) => {
             <div key={project.id} class="project-card fade-in">
               <div class="project-card-banner">
                 <i class={`${project.icon} banner-icon`}></i>
+                {project.status && (
+                  <span class="project-card-status-pill">
+                    <span class="status-indicator-dot-mini"></span> En prod
+                  </span>
+                )}
               </div>
               <div class="project-card-content">
                 <h4 class="project-card-title">{project.title}</h4>
